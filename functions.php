@@ -100,9 +100,6 @@ add_filter('thematic_abovecontainer', 'my_banner');
 function childtheme_override_postheader_posttitle() {
     $posttitle = "\n\n\t\t\t\t\t";
 
-    if ( !$title_content = get_the_title() )
-        $title_content = '<a href="' . get_permalink() . '">' . _x('(Untitled)', 'Default title for untitled posts', 'thematic') . '</a>';
-
     if (is_single() || is_page()) {
         $posttitle .= '<h1 class="entry-title">' . $title_content . "</h1>\n";
     } elseif (is_404()) {
