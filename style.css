@@ -426,54 +426,54 @@ body.home #banner-aside img {
 	width: 760px;
 }
 
-.donate-form .crm-section {
+#crm-main-content-wrapper .crm-section {
 	margin-top: 1.5em;
 }
 
-.donate-form,
-.donate-form .email-5-section {
+#crm-main-content-wrapper,
+#crm-main-content-wrapper .email-5-section {
 	margin-top: 4em;
 }
 
-.donate-form {
-	margin-bottom: 6em;
+#crm-main-content-wrapper #footer_text {
+	margin-top: 6em;
 }
 
-.donate-form .crm-profile-name-Your_details_15 {
+#crm-main-content-wrapper .crm-profile-name-Your_details_15 {
 	border: 0;
 	margin: 0;
 }
 
-.donate-form .crm-profile-name-Your_details_15 legend {
+#crm-main-content-wrapper .crm-profile-name-Your_details_15 legend {
 	display: none;
 }
 
-.donate-form #editrow-first_name,
-.donate-form #editrow-last_name {
+#crm-main-content-wrapper #editrow-first_name,
+#crm-main-content-wrapper #editrow-last_name {
 	margin-top: 10px;
 }
 
-.donate-form input[type="text"] {
+#crm-main-content-wrapper input[type="text"] {
 	padding-left: 10px !important;
 }
 
-.donate-form #crm-submit-buttons {
+#crm-main-content-wrapper #crm-submit-buttons {
 	margin-left: 19%;
 }
 
-.donate-form input#_qf_Main_upload-bottom {
+#crm-main-content-wrapper input#_qf_Main_upload-bottom {
 	background: #D67124 !important;
 	padding: 10px 25px !important;
 	box-shadow: inset 0 -4px rgba(0,0,0,.2);
 	border-radius: .5em
 }
 
-.donate-form span.crm-button  {
+#crm-main-content-wrapper span.crm-button  {
 	background: none !important;
 	padding: 0 !important;
 	border: 0 !important;
 }
 
-.donate-form #printer-friendly {
+#printer-friendly {
 	display: none;
 }
