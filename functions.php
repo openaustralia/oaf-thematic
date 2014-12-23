@@ -117,4 +117,18 @@ function childtheme_override_postheader_posttitle() {
     return apply_filters('thematic_postheader_posttitle',$posttitle);
 }
 
+function childtheme_override_postheader() {
+
+    global $post;
+
+    if ( is_404() || $post->post_type == 'page') {
+        $postheader = thematic_postheader_posttitle();
+    } else {
+        $postheader = thematic_postheader_posttitle() . thematic_postheader_postmeta();
+    }
+
+    echo apply_filters( 'thematic_postheader', $postheader ); // Filter to override default post header
+}
+
+
 ?>
