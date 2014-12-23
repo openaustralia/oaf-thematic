@@ -121,10 +121,10 @@ function childtheme_override_postheader() {
 
     global $post;
 
-    if ( is_404() || $post->post_type == 'page') {
-        $postheader = thematic_postheader_posttitle();
-    } else {
+    if ( $post->post_type == 'post') {
         $postheader = thematic_postheader_posttitle() . thematic_postheader_postmeta();
+    } else {
+        $postheader = thematic_postheader_posttitle();
     }
 
     echo apply_filters( 'thematic_postheader', $postheader ); // Filter to override default post header
