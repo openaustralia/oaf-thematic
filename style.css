@@ -417,3 +417,63 @@ body.home #banner-aside img {
 	background: -moz-linear-gradient(top,  #dddddd,  #bbbbbb);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddddddd', endColorstr='#bbbbbb');
 }
+
+/* donation form cleanup */
+
+.donate-lede {
+	font-size: 22px;
+	line-height: 1.5;
+	width: 760px;
+}
+
+.donate-form .crm-section {
+	margin-top: 1.5em;
+}
+
+.donate-form,
+.donate-form .email-5-section {
+	margin-top: 4em;
+}
+
+.donate-form {
+	margin-bottom: 6em;
+}
+
+.donate-form .crm-profile-name-Your_details_15 {
+	border: 0;
+	margin: 0;
+}
+
+.donate-form .crm-profile-name-Your_details_15 legend {
+	display: none;
+}
+
+.donate-form #editrow-first_name,
+.donate-form #editrow-last_name {
+	margin-top: 10px;
+}
+
+.donate-form input[type="text"] {
+	padding-left: 10px !important;
+}
+
+.donate-form #crm-submit-buttons {
+	margin-left: 19%;
+}
+
+.donate-form input#_qf_Main_upload-bottom {
+	background: #D67124 !important;
+	padding: 10px 25px !important;
+	box-shadow: inset 0 -4px rgba(0,0,0,.2);
+	border-radius: .5em
+}
+
+.donate-form span.crm-button  {
+	background: none !important;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+.donate-form #printer-friendly {
+	display: none;
+}
