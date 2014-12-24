@@ -132,5 +132,9 @@ function childtheme_override_postheader() {
     echo apply_filters( 'thematic_postheader', $postheader ); // Filter to override default post header
 }
 
+function oaf_thematic_scripts() {
+    wp_enqueue_script('oaf_thematic_custom', get_stylesheet_directory_uri() . '/custom.js', array('jquery'));
+}
+add_action('wp_enqueue_scripts', 'oaf_thematic_scripts');
 
 ?>
