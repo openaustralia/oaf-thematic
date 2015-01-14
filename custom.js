@@ -33,3 +33,23 @@ jQuery(function ($) {
     }
   }
 });
+
+
+// hide other amount field unless wanted
+jQuery(function ($) {
+  $radio = $("div.price-set-row:last-child input[type='radio']");
+  $input = $(".other_amount-section");
+
+  // add class
+  $input.addClass("donation-step-hidden");
+
+  // toggle class on hover
+  $radio.change(function() {
+    if(this.checked) {
+      $input.removeClass("donation-step-hidden");
+      $(".other_amount-section input").focus();
+    } else {
+      $input.addClass("donation-step-hidden");
+    }
+  });
+});
