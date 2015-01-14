@@ -533,7 +533,8 @@ a.oaf-donation-step-reveal {
 }
 
 #crm-main-content-wrapper input#_qf_Main_upload-bottom,
-.oaf-donation-step-reveal {
+.oaf-donation-step-reveal,
+span.crm-button {
 	background: #D67124 !important;
 	padding: 10px 25px !important;
 	box-shadow: inset 0 -4px rgba(0,0,0,.2);
