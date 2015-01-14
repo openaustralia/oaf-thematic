@@ -432,7 +432,8 @@ body.home #banner-aside img {
 
 #crm-main-content-wrapper,
 #crm-main-content-wrapper .email-5-section {
-	margin-top: 4em;
+	margin-top: 2em;
+	padding-top: 2em;
 }
 
 #crm-main-content-wrapper #footer_text {
@@ -472,11 +473,23 @@ body.home #banner-aside img {
 }
 
 #crm-main-content-wrapper .price-set-option-content.highlight label {
-	background: lightblue;
+	background: #ADD8E6;
 }
 
-#crm-main-content-wrapper label[for="CIVICRM_QFID_0_10"] {
+#crm-main-content-wrapper .price-set-option-content input:focus + label,
+#crm-main-content-wrapper .price-set-option-content label:hover,
+#crm-main-content-wrapper .price-set-option-content label:focus {
+	border: 3px #4F9CB5 solid;
+	width: 134px;
+	padding: 12px 0px;
+}
+
+#crm-main-content-wrapper label[for="CIVICRM_QFID_0_12"] {
 	font-size: 16px;
+}
+
+#crm-main-content-wrapper .is_recur-section {
+	font-size: 18px;
 }
 
 #crm-main-content-wrapper .crm-profile-name-Your_details_15 {
@@ -484,7 +497,8 @@ body.home #banner-aside img {
 	margin: 0;
 }
 
-#crm-main-content-wrapper .crm-profile-name-Your_details_15 legend {
+#crm-main-content-wrapper .crm-profile-name-Your_details_15 legend,
+.donation-step-hidden {
 	display: none;
 }
 
@@ -497,15 +511,31 @@ body.home #banner-aside img {
 	padding-left: 10px !important;
 }
 
-#crm-main-content-wrapper #crm-submit-buttons {
+#crm-main-content-wrapper #crm-submit-buttons,
+.oaf-donation-step-reveal {
 	margin-left: 19%;
 }
 
-#crm-main-content-wrapper input#_qf_Main_upload-bottom {
+.crm-container .credit_card_info-group,
+.crm-container .billing_name_address-group {
+	margin-top: 45px;
+} 
+
+a.oaf-donation-step-reveal {
+        padding: 1opx 25px;
+	color: #ffffff !important;
+	font-size: 1.2em;
+	margin-top: 35px;
+  	display: inline-block;
+}
+
+#crm-main-content-wrapper input#_qf_Main_upload-bottom,
+.oaf-donation-step-reveal {
 	background: #D67124 !important;
 	padding: 10px 25px !important;
 	box-shadow: inset 0 -4px rgba(0,0,0,.2);
-	border-radius: .5em
+	border-radius: .5em;
+	font-size: 1.7em;
 }
 
 #crm-main-content-wrapper span.crm-button  {
