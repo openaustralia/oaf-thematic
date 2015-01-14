@@ -497,9 +497,12 @@ body.home #banner-aside img {
 	margin: 0;
 }
 
-#crm-main-content-wrapper .crm-profile-name-Your_details_15 legend,
-.donation-step-hidden {
+#crm-main-content-wrapper .crm-profile-name-Your_details_15 legend {
 	display: none;
+}
+
+.donation-step-hidden {
+	display: none !important;
 }
 
 #crm-main-content-wrapper #editrow-first_name,
