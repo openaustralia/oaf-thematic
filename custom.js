@@ -24,12 +24,24 @@ jQuery(function ($) {
           step2.removeClass("donation-step-hidden");
           btn.attr("href", "#donation-step-3");
           btn.text("Final step");
+          if (typeof __gaTracker !== 'undefined') {
+            __gaTracker('send', 'event', 'donation', 'click first step');
+          }
         } else if (!step2.hasClass("donation-step-hidden") && step3.hasClass("donation-step-hidden")) {
           step3.removeClass("donation-step-hidden");
           step4.removeClass("donation-step-hidden");
+          if (typeof __gaTracker !== 'undefined') {
+            __gaTracker('send', 'event', 'donation', 'click final step');
+          }
           btn.remove();
         }
       });
+
+      if (typeof __gaTracker !== 'undefined') {
+        $("input.crm-form-submit").click(function(event) {
+          __gaTracker('send', 'event', 'donation', 'click submit');
+        });
+      }
     }
   }
 });
