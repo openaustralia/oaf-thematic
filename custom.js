@@ -24,7 +24,6 @@ jQuery(function ($) {
           step2.removeClass("donation-step-hidden");
           btn.attr("href", "#donation-step-3");
           btn.text("Final step");
-          ga('send', 'event', 'donation', 'click step 1')
         } else if (!step2.hasClass("donation-step-hidden") && step3.hasClass("donation-step-hidden")) {
           step3.removeClass("donation-step-hidden");
           step4.removeClass("donation-step-hidden");
