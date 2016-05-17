@@ -1,6 +1,12 @@
 jQuery(function ($) {
   // maker sure there are not messages being displayed
   if ($(".CRM_Contribute_Form_Contribution_Main").length) {
+    // move the regular switch above the amounts
+    if ($(".crm-section.is_recur-section").length) {
+      regular_section = $(".crm-section.is_recur-section");
+      $("#priceset-div").before(regular_section);
+    }
+
     if ($("form > .messages").length === 0) {
       $(".crm-submit-buttons").after('<a class="oaf-donation-button oaf-donation-step-reveal" role="button" href="#donation-step-2">Next step</button>');
 
