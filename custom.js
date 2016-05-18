@@ -14,12 +14,21 @@ jQuery(function ($) {
       // check recurring when btn selected
       $regular_btn = $('#recurring_selected');
       $("#recurring_switch input").change(function() {
+        function unSetAmount() {
+          if ($("#priceset .price-set-row:last-child input:checked").length === 0) {
+            $("#priceset input:checked").prop("checked", false).removeClass("highlight");
+          }
+        }
+
         if ($regular_btn.prop("checked")) {
           $recure_checkbox.prop("checked", true);
           $("#priceset").removeClass("oneoff-priceset");
+          unSetAmount();
+
         } else {
           $recure_checkbox.prop("checked", false);
           $("#priceset").addClass("oneoff-priceset");
+          unSetAmount();
         }
       });
       $regular_btn.prop("checked", true);
