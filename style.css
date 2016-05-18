@@ -479,13 +479,13 @@ body.home #banner-aside img {
 
 #recuring_switch input:checked + label,
 #crm-main-content-wrapper .price-set-option-content input:checked + label {
-	background: #ADD8E6;
+	background: #f4e859;
 }
 
 #crm-main-content-wrapper .price-set-option-content input:focus + label,
 #crm-main-content-wrapper .price-set-option-content label:hover,
 #crm-main-content-wrapper .price-set-option-content label:focus {
-	border: 3px #4F9CB5 solid;
+	border: 3px #f4e859 solid;
 	width: 134px;
 	padding: 12px 0px;
 }
