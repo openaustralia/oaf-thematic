@@ -484,7 +484,6 @@ body.home #banner-aside img {
 	width: 140px;
 	background: #eee;
 	border-radius: 5px;
-	transition: background .4s ease;
 	text-align: center;
 	color: #222;
 }
