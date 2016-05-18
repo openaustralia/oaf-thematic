@@ -9,7 +9,7 @@ jQuery(function ($) {
 
       // replace the existing switch with button group
       $(".is_recur-section div").hide();
-      $regular_section.prepend("<fieldgroup id=\"recurring_switch\"> <input id=\"recurring_selected\" name=\"recurring_switch\" type=\"radio\" /> <label for=\"recurring_selected\">Monthly</label> <input id=\"oneoff_selected\" name=\"recurring_switch\" type=\"radio\" /> <label for=\"oneoff_selected\">Just once</label> </fieldgroup> ");
+      $regular_section.prepend("<fieldgroup id=\"recurring_switch\"> <input id=\"recurring_selected\" name=\"recurring_switch\" type=\"radio\" /> <label for=\"recurring_selected\">Monthly</label> <input id=\"oneoff_selected\" name=\"recurring_switch\" type=\"radio\" /> <label for=\"oneoff_selected\">Once</label> </fieldgroup> ");
 
       // check recurring when btn selected
       $regular_btn = $('#recurring_selected');
