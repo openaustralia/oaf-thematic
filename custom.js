@@ -20,6 +20,8 @@ jQuery(function ($) {
           $recure_checkbox.prop("checked", false);
         }
       });
+      $regular_btn.prop("checked", true);
+      $recure_checkbox.prop("checked", true);
     }
 
     if ($("form > .messages").length === 0) {
