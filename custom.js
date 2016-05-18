@@ -6,7 +6,7 @@ jQuery(function ($) {
         $(this).text($(this).text().replace(".00",""));
     });
     // move the regular switch above the amounts
-    if ($(".crm-section.is_recur-section").length && $(".crm-contribution-page-id-7").length) {
+    if ($(".crm-section.is_recur-section").length) {
       $regular_section = $(".crm-section.is_recur-section");
       $recure_checkbox = $("input#is_recur");
       $("#priceset-div").before($regular_section);
