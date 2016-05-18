@@ -471,7 +471,7 @@ body.home #banner-aside img {
         font-weight: normal !important;
 }
 
-#crm-main-content-wrapper .price-set-row .highlight .crm-price-amount-amount {
+#crm-main-content-wrapper .price-set-row .price-set-option-content input:checked + label .crm-price-amount-amount {
         font-weight: bold !important;
 }
 
