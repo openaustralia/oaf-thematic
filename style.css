@@ -480,6 +480,7 @@ body.home #banner-aside img {
 #recurring_switch input:checked + label,
 #crm-main-content-wrapper .price-set-option-content input:checked + label {
 	background: #f4e859 !important;
+	font-weight: bold;
 }
 
 #recurring_switch input:focus + label,
