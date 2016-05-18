@@ -14,7 +14,7 @@ jQuery(function ($) {
       // check recurring when btn selected
       $regular_btn = $('#recurring_selected');
       $regular_btn.change(function() {
-        if ($regular_btn.prop("checked", true)) {
+        if ($regular_btn.prop("checked")) {
           $recure_checkbox.prop("checked", true);
         } else {
           $recure_checkbox.prop("checked", false);
