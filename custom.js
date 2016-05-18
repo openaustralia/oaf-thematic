@@ -16,8 +16,10 @@ jQuery(function ($) {
       $("#recurring_switch input").change(function() {
         if ($regular_btn.prop("checked")) {
           $recure_checkbox.prop("checked", true);
+          $("#priceset").removeClass("oneoff-priceset");
         } else {
           $recure_checkbox.prop("checked", false);
+          $("#priceset").addClass("oneoff-priceset");
         }
       });
       $regular_btn.prop("checked", true);

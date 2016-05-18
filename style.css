@@ -444,6 +444,21 @@ body.home #banner-aside img {
 	display: inline;
 }
 
+/* By default only show the recuring priceset*/
+#priceset .price-set-row:nth-child(even),
+#priceset.oneoff-priceset .price-set-row:nth-child(odd) {
+  display: none;
+}
+
+#priceset.oneoff-priceset .price-set-row:nth-child(even) {
+  display: inline;
+}
+
+/* Always show the 'other' option */
+#priceset .price-set-row:last-child {
+  display: inline !important;
+}
+
 #recurring_switch input,
 #crm-main-content-wrapper .price-set-option-content input {
 	opacity: 0;
