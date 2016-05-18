@@ -3,8 +3,23 @@ jQuery(function ($) {
   if ($(".CRM_Contribute_Form_Contribution_Main").length) {
     // move the regular switch above the amounts
     if ($(".crm-section.is_recur-section").length) {
-      regular_section = $(".crm-section.is_recur-section");
-      $("#priceset-div").before(regular_section);
+      $regular_section = $(".crm-section.is_recur-section");
+      $recure_checkbox = $("input#is_recur");
+      $("#priceset-div").before($regular_section);
+
+      // replace the existing switch with button group
+      $(".is_recur-section div").hide();
+      $regular_section.prepend("<fieldgroup id=\"recuring_switch\"> <input id=\"recuring_selected\" name=\"recuring_switch\" type=\"radio\" /> <label for=\"recuring_selected\">Monthly</label> <input id=\"oneoff_selected\" name=\"recuring_switch\" type=\"radio\" /> <label for=\"oneoff_selected\">Just once</label> </fieldgroup> ");
+
+      // check recurring when btn selected
+      $regular_btn = $('#recuring_selected');
+      $regular_btn.change(function() {
+        if ($regular_btn.prop("checked", true)) {
+          $recure_checkbox.prop("checked", true);
+        } else {
+          $recure_checkbox.prop("checked", false);
+        }
+      });
     }
 
     if ($("form > .messages").length === 0) {
