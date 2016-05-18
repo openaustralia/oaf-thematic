@@ -89,7 +89,9 @@ jQuery(function ($) {
     $input = $(".other_amount-section");
 
     // add class
-    $input.addClass("donation-step-hidden");
+    if ($radio.prop("checked") === false) {
+      $input.addClass("donation-step-hidden");
+    }
 
     // toggle class on hover
     $radio.change(function() {
