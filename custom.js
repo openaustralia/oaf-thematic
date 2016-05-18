@@ -29,10 +29,18 @@ jQuery(function ($) {
           $recure_checkbox.prop("checked", true);
           $("#priceset").removeClass("oneoff-priceset");
           unSetAmount();
+
+          if (typeof __gaTracker !== 'undefined') {
+            __gaTracker('send', 'event', 'donation', 'click donate monthly button');
+          }
         } else {
           $recure_checkbox.prop("checked", false);
           $("#priceset").addClass("oneoff-priceset");
           unSetAmount();
+
+          if (typeof __gaTracker !== 'undefined') {
+            __gaTracker('send', 'event', 'donation', 'click donate once button');
+          }
         }
       });
       $regular_btn.prop("checked", true);
