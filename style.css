@@ -444,7 +444,7 @@ body.home #banner-aside img {
 	display: inline;
 }
 
-#recuring_switch input,
+#recurring_switch input,
 #crm-main-content-wrapper .price-set-option-content input {
 	opacity: 0;
 	position: absolute;
@@ -461,7 +461,7 @@ body.home #banner-aside img {
 }
 
 
-#recuring_switch label,
+#recurring_switch label,
 #crm-main-content-wrapper .price-set-option-content label {
 	display: inline-block;
 	margin: 0px 8px 20px;
@@ -477,14 +477,14 @@ body.home #banner-aside img {
 	font-size: 1.2em;
 }
 
-#recuring_switch input:checked + label,
+#recurring_switch input:checked + label,
 #crm-main-content-wrapper .price-set-option-content input:checked + label {
 	background: #f4e859;
 }
 
-#recuring_switch input:focus + label,
-#recuring_switch label:hover,
-#recuring_switch label:focus,
+#recurring_switch input:focus + label,
+#recurring_switch label:hover,
+#recurring_switch label:focus,
 #crm-main-content-wrapper .price-set-option-content input:focus + label,
 #crm-main-content-wrapper .price-set-option-content label:hover,
 #crm-main-content-wrapper .price-set-option-content label:focus {
