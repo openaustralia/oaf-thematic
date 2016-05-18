@@ -445,7 +445,7 @@ body.home #banner-aside img {
 }
 
 /* By default only show the recuring priceset*/
-#priceset .price-set-row:nth-child(even),
+.recur-section-with-switch + #priceset-div .price-set-row:nth-child(even),
 #priceset.oneoff-priceset .price-set-row:nth-child(odd) {
   display: none;
 }
