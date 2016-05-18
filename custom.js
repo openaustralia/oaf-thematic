@@ -1,6 +1,10 @@
 jQuery(function ($) {
   // maker sure there are not messages being displayed
   if ($(".CRM_Contribute_Form_Contribution_Main").length) {
+    // remove cents from amount values
+    $("#priceset .crm-price-amount-amount").each(function() {
+        $(this).text($(this).text().replace(".00",""));
+    });
     // move the regular switch above the amounts
     if ($(".crm-section.is_recur-section").length && $(".crm-contribution-page-id-7").length) {
       $regular_section = $(".crm-section.is_recur-section");
