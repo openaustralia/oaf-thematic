@@ -24,7 +24,6 @@ jQuery(function ($) {
           $recure_checkbox.prop("checked", true);
           $("#priceset").removeClass("oneoff-priceset");
           unSetAmount();
-
         } else {
           $recure_checkbox.prop("checked", false);
           $("#priceset").addClass("oneoff-priceset");
