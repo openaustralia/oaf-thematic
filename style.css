@@ -479,7 +479,7 @@ body.home #banner-aside img {
 
 #recurring_switch input:checked + label,
 #crm-main-content-wrapper .price-set-option-content input:checked + label {
-	background: #f4e859;
+	background: #f4e859 !important;
 }
 
 #recurring_switch input:focus + label,
@@ -488,9 +488,7 @@ body.home #banner-aside img {
 #crm-main-content-wrapper .price-set-option-content input:focus + label,
 #crm-main-content-wrapper .price-set-option-content label:hover,
 #crm-main-content-wrapper .price-set-option-content label:focus {
-	border: 3px #f4e859 solid;
-	width: 134px;
-	padding: 12px 0px;
+	background: #cdcdcd;
 }
 
 #crm-main-content-wrapper label[for="CIVICRM_QFID_0_12"] {
