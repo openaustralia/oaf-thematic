@@ -471,6 +471,7 @@ body.home #banner-aside img {
 	border-radius: 5px;
 	transition: background .4s ease;
 	text-align: center;
+	color: #222;
 }
 
 #crm-main-content-wrapper .price-set-option-content label {
