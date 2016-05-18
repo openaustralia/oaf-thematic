@@ -482,6 +482,9 @@ body.home #banner-aside img {
 	background: #f4e859;
 }
 
+#recuring_switch input:focus + label,
+#recuring_switch label:hover,
+#recuring_switch label:focus,
 #crm-main-content-wrapper .price-set-option-content input:focus + label,
 #crm-main-content-wrapper .price-set-option-content label:hover,
 #crm-main-content-wrapper .price-set-option-content label:focus {
