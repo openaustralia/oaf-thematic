@@ -1,5 +1,18 @@
 jQuery(function ($) {
   // maker sure there are not messages being displayed
+  function addStateToRevealButtonText() {
+    if ($("#recurring_switch input").length) {
+      if ($("#recurring_switch input").prop("checked")) {
+        state_text = " monthly contribution";
+      } else {
+        state_text = " one-off contribution";
+      }
+
+      $(".oaf-donation-step-reveal").text("Next step with" + state_text);
+      $("input.crm-form-submit").attr("value", "Confirm" + state_text);
+    }
+  }
+
   if ($(".CRM_Contribute_Form_Contribution_Main").length) {
     // remove cents from amount values
     $("#priceset .crm-price-amount-amount").each(function() {
@@ -29,6 +42,7 @@ jQuery(function ($) {
           $recure_checkbox.prop("checked", true);
           $("#priceset").removeClass("oneoff-priceset");
           unSetAmount();
+          addStateToRevealButtonText();
 
           if (typeof __gaTracker !== 'undefined') {
             __gaTracker('send', 'event', 'donation', 'click donate monthly button');
@@ -37,6 +51,7 @@ jQuery(function ($) {
           $recure_checkbox.prop("checked", false);
           $("#priceset").addClass("oneoff-priceset");
           unSetAmount();
+          addStateToRevealButtonText();
 
           if (typeof __gaTracker !== 'undefined') {
             __gaTracker('send', 'event', 'donation', 'click donate once button');
@@ -49,6 +64,7 @@ jQuery(function ($) {
 
     if ($("form > .messages").length === 0) {
       $(".crm-submit-buttons").after('<a class="oaf-donation-button oaf-donation-step-reveal" role="button" href="#donation-step-2">Next step</button>');
+      addStateToRevealButtonText();
 
       var btn = $(".oaf-donation-step-reveal");
 
