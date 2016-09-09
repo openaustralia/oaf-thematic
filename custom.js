@@ -105,6 +105,11 @@ jQuery(function ($) {
         if (typeof __gaTracker !== 'undefined') {
           $("input.crm-form-submit").click(function(event) {
             __gaTracker('send', 'event', 'donation', 'click submit');
+
+            if ($("form > .messages").length) {
+              message = $("form > .messages:first-child").text();
+              __gaTracker('send', 'event', 'donation', 'error: ' + message );
+            }
           });
         }
       }
