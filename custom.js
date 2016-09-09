@@ -1,4 +1,10 @@
 jQuery(function ($) {
+  // Send error messages to Google Analytics
+  function sendMessagesToGoogleAnalytics() {
+    message = $("form > .messages:first-child").text();
+    __gaTracker('send', 'event', 'donation', 'error: ' + message );
+  }
+
   // maker sure there are not messages being displayed
   function addStateToRevealButtonText() {
     if ($("#recurring_switch input").length) {
@@ -106,16 +112,19 @@ jQuery(function ($) {
           $("input.crm-form-submit").click(function(event) {
             __gaTracker('send', 'event', 'donation', 'click submit');
 
-            if ($("form > .messages").length) {
-              message = $("form > .messages:first-child").text();
-              __gaTracker('send', 'event', 'donation', 'error: ' + message );
-            }
+            // HACK: Wait 3 seconds to catch error response
+            setTimeout(
+              function() {
+                if ($("form > .messages").length) {
+                  sendMessagesToGoogleAnalytics();
+                  console.log("Form error");
+                }
+              }, 3000);
           });
         }
       }
     } else {
-      message = $("form > .messages:first-child").text();
-      __gaTracker('send', 'event', 'donation', 'error: ' + message );
+      sendMessagesToGoogleAnalytics();
     }
 
     // hide other amount field unless wanted
