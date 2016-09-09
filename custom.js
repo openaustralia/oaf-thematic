@@ -106,6 +106,9 @@ jQuery(function ($) {
           });
         }
       }
+    } else {
+      message = $("form > .messages:first-child").text();
+      __gaTracker('send', 'event', 'donation', 'error: ' + message );
     }
 
     // hide other amount field unless wanted
