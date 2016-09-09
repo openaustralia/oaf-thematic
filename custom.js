@@ -58,6 +58,8 @@ jQuery(function ($) {
           }
         }
       });
+      // FIXME: If the form has already been filled and we're showing an error,
+      // don't reset to having the regular donation option selected
       $regular_btn.prop("checked", true);
       $recure_checkbox.prop("checked", true);
     }
