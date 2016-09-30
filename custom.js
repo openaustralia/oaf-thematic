@@ -65,11 +65,14 @@ jQuery(function ($) {
         }
       });
 
-      // FIXME: If the form has already been filled and we're showing an error,
-      // maintain the correct state of the recurring button.
-      // Currently defaults to one-off.
-      $("#oneoff_selected").prop("checked", true);
-      $recure_checkbox.prop("checked", false);
+      // Select the recurring button if the checkbox is checked,
+      // otherwise, select the one-off button.
+      if ($recure_checkbox.prop("checked")) {
+        $regular_btn.prop("checked", true);
+      } else {
+        $("#oneoff_selected").prop("checked", true);
+        $("#priceset").addClass("oneoff-priceset");
+      }
     }
 
     // make sure there are not messages being displayed
