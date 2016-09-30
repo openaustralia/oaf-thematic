@@ -430,6 +430,12 @@ body.home #banner-aside img {
 	margin-top: 1.5em;
 }
 
+/* Prevent page scroll when using hidden checkboxes */
+.recur-section-with-switch,
+#priceset-div {
+  position: relative;
+}
+
 #crm-main-content-wrapper,
 #crm-main-content-wrapper .email-5-section {
 	margin-top: 2em;
