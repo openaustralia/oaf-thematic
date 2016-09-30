@@ -5,7 +5,7 @@ jQuery(function ($) {
     __gaTracker('send', 'event', 'donation', 'error: ' + message );
   }
 
-  // maker sure there are not messages being displayed
+  // Make choice clearer by adding it to confirm button
   function addStateToRevealButtonText() {
     if ($("#recurring_switch input").length) {
       if ($("#recurring_switch input").prop("checked")) {
@@ -70,6 +70,7 @@ jQuery(function ($) {
       $recure_checkbox.prop("checked", true);
     }
 
+    // make sure there are not messages being displayed
     if ($("form > .messages").length === 0) {
       $(".crm-submit-buttons").after('<a class="oaf-donation-button oaf-donation-step-reveal" role="button" href="#donation-step-2">Next step</button>');
       addStateToRevealButtonText();
