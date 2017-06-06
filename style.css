@@ -426,6 +426,15 @@ body.home #banner-aside img {
 	width: 780px;
 }
 
+.donate-paypal-sentence p,
+.donate-paypal-sentence form {
+  display: inline;
+}
+
+.donate-paypal-sentence form {
+  vertical-align: middle;
+}
+
 #crm-main-content-wrapper .crm-section {
 	margin-top: 1.5em;
 }
