@@ -6,23 +6,9 @@ This is the theme currently running at https://www.openaustraliafoundation.org.a
 
 ## Deployment
 
-To deploy code changes to the site you need to ssh into the `jamison` server and user git to pull down changes.
+To deploy changes to to the production site:
 
-```
-ssh you@kedumba.openaustraliafoundation.org.au
-
-ssh you@jamison
-
-cd /var/www/wp-content/themes/oaf-thematic
-
-sudo git fetch
-
-# check if the status is what you expect
-git status
-
-# if the changes are what you expect
-sudo git pull
-
-# check that the current commit is what you expect it to be
-git status
-```
+* Increase the version number in the header of style.css
+* Push your changes to github
+* Go to wordpress admin console, to the GitHub updater plugin settings, and hit "Refresh Cache"
+* The theme will now say it needs updating. Do the update.
